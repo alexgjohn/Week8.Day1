@@ -25,7 +25,6 @@ const DisneyCharacterContainer = () => {
     
     return (
         <>
-            <h1>This is the disney character container</h1>
             <CharacterSelect disneyCharacters={disneyCharacters.data} updateSelectedCharacter = {updateSelectedCharacter}/>
             {selectedCharacter ? <CharacterInformation character = {selectedCharacter}/> : null}
         </>
