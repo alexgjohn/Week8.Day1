@@ -24,7 +24,7 @@ const CharacterSelect = ({disneyCharacters, updateSelectedCharacter}) => {
 
     return (
         <>
-            <h2>This is character select</h2>
+            <h2>Select a character: </h2>
             <select onChange = {handleOnChange}>
                 {characterSelection}
             </select>

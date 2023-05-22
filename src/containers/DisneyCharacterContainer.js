@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import CharacterSelect from '../components/CharacterSelect';
 import CharacterInformation from '../components/CharacterInformation';
+import ReactPaginate from 'react-paginate';
 
 
 const DisneyCharacterContainer = () => {
@@ -25,7 +26,6 @@ const DisneyCharacterContainer = () => {
     
     return (
         <>
-            <h1>This is the disney character container</h1>
             <CharacterSelect disneyCharacters={disneyCharacters.data} updateSelectedCharacter = {updateSelectedCharacter}/>
             {selectedCharacter ? <CharacterInformation character = {selectedCharacter}/> : null}
         </>
