@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import CharacterSelect from '../components/CharacterSelect';
 import CharacterInformation from '../components/CharacterInformation';
+import ReactPaginate from 'react-paginate';
 
 
 const DisneyCharacterContainer = () => {
